@@ -13,7 +13,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 /*
-* Section 3 UC4- Database Setting as Environment Variable
+* Validation UC1- Added Validations to Name and Salary fields
 * */
 @RestController
 @RequestMapping("/empData")
