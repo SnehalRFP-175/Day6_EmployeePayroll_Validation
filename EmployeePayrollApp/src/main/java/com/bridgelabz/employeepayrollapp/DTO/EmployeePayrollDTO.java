@@ -2,20 +2,21 @@ package com.bridgelabz.employeepayrollapp.DTO;
 
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Value;
-
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 
 
-@Data
+
 @AllArgsConstructor
 public class EmployeePayrollDTO {
 
+
+    @Pattern(regexp = "^[A-z]{1}[a-zA-z\\s]{2,}$",message = "Invalid Name....!")
+    @NotEmpty(message = "Employee Cannot Be Null....!")
     public String name;
 
+    @Min(value=100 , message = "The Salary Should be more than 100")
     public long salary;
 
     @Override
