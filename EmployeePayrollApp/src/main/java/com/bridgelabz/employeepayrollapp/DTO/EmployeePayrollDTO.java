@@ -12,10 +12,9 @@ import javax.validation.constraints.Pattern;
 public class EmployeePayrollDTO {
 
 
-    @Pattern(regexp = "^[A-z]{1}[a-zA-z\\s]{2,}$",message = "Invalid Name....!")
-    @NotEmpty(message = "Employee Cannot Be Null....!")
+    @NotEmpty(message = "Employee name cannot be empty")
+    @Pattern(regexp = "^[A-Z][a-zA-Z\\s]{2,}$", message = "Employee name Invalid")
     public String name;
-
     @Min(value=100 , message = "The Salary Should be more than 100")
     public long salary;
 

@@ -13,7 +13,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 /*
-* Validation UC1- Added Validations to Name and Salary fields
+* Validation UC2- User Friendly Validations in Case Validation Fails
 * */
 @RestController
 @RequestMapping("/empData")
